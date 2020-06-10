@@ -31,5 +31,5 @@ jobs:
     - name: install surge
       run: npm install -g surge
     - name: deploying to surge
-      run: ./ normal-coal.surge.sh/ -- token {{secrets.TEST_TOKEN}}
+      run: ./ normal-coal.surge.sh/ --token ${{secrets.TEST_TOKEN}}
 
